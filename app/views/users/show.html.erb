@@ -3,7 +3,7 @@
     <div class="user">
       <img src="<%= "/user_images/#{@user.image_name}" %>">
       <h2>name: <%= @user.name %></h2>
-      <p>mail: <%= @user.email %></p>
+      
       <% if @user.id == @current_user.id %>
         <%= link_to("編集", "/users/#{@user.id}/edit")%>
       <% end %>
